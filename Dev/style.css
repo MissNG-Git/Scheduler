@@ -1,7 +1,17 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-image: url(https://st2.depositphotos.com/1005680/5361/v/600/depositphotos_53612825-stock-illustration-vector-background-with-blue-flowers.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Clicker Script', cursive;
+  font-weight: bolder;
 }
 
 textarea{
@@ -15,10 +25,31 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-image: url(https://image.shutterstock.com/image-vector/cherry-spring-flower-background-260nw-555467743.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: brown;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+.container.fluid {
+  float: right;
+  margin-bottom: 50px;
+  max-width: 60%;
+}
+
+img {
+  float: left;
+  height: 100%;
+  width: 30%; 
+  margin-right: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .description{
@@ -68,4 +99,14 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.footer {
+  width: 100%;
+  background-color: lightgray;
+  color: #2e2e2e;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 15px;
+  flex-shrink: 0;
 }
