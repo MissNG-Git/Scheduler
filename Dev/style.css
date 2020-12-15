@@ -1,12 +1,12 @@
 body {
+  background-attachment: fixed;
+  background-image: url(https://st2.depositphotos.com/1005680/5361/v/600/depositphotos_53612825-stock-illustration-vector-background-with-blue-flowers.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-image: url(https://st2.depositphotos.com/1005680/5361/v/600/depositphotos_53612825-stock-illustration-vector-background-with-blue-flowers.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 h1 {
@@ -14,86 +14,108 @@ h1 {
   font-weight: bolder;
 }
 
-textarea{
+textarea {
   background: transparent;
+  background-color:palevioletred;
   border: none;
-  resize: none;
-  color: #000000;
   border-left: 1px solid black;
+  color: lightyellow;
+  opacity: 0.75;
   padding: 10px;
+  resize: none;
 }
 
 .jumbotron {
-  text-align: center;
-  background-image: url(https://image.shutterstock.com/image-vector/cherry-spring-flower-background-260nw-555467743.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   background-attachment: fixed;
-  color: brown;
+  background-image: url(https://image.shutterstock.com/image-vector/cherry-spring-flower-background-260nw-555467743.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 25px ridge lavender;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  color: brown;
+  text-align: center;
+}
+
+.headBG {
+  width: 50%;
+  display: inline-block;
+  background-color: rgba(255, 182, 193, 0.5);
+  border-radius: 3%;
+}
+
+#currdentDay,
+#currentTime {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .container.fluid {
   float: right;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   max-width: 60%;
 }
 
 img {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   float: left;
   height: 100%;
-  width: 30%; 
   margin-right: 50px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  opacity: 0.9;
+  width: 30%; 
 }
 
-.description{
+.description {
+  font-size: 16px;
   white-space: pre-wrap;
 }
 
-.time-block{
-  text-align: center;
+.time-block {
   border-radius: 15px;
+  text-align: center;
 }
 
 .row {
-  white-space: pre-wrap;
+  border-top: 1px solid white;
   height: 80px;
-  border-top: 1px solid white;;
+  margin: auto;
+  white-space: pre-wrap;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: lightpink;
   border-top: 1px dashed #000000;
+  color: darkslategrey;
+  opacity: 0.95;
+  padding: 10px;
+  text-align: center;
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: #d3a7c3;
+  color: darkslategrey;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: darkslategrey;
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: coral;
+  color: darkslategrey;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
+  background-color: steelblue;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border-left: 1px solid dimgray;
+  border-top-right-radius: 15px;
   color: white;
+  opacity: 0.9;
 }
 
 .saveBtn i:hover {
@@ -102,11 +124,27 @@ img {
 }
 
 .footer {
-  width: 100%;
   background-color: lightgray;
   color: #2e2e2e;
-  text-align: center;
-  padding-top: 15px;
-  margin-top: 15px;
   flex-shrink: 0;
+  margin-top: 15px;
+  padding-top: 15px;
+  text-align: center;
+  width: 100%;
 }
+
+@media screen and (max-width: 972px) {
+  img {
+    display: none;
+  }
+ }
+ 
+ @media screen and (max-width: 608px) {
+   .hour {
+     font-size: small;
+   }
+ 
+   h1 {
+     font-size: 40px !important;
+   }
+  }
