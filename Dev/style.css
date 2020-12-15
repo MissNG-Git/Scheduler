@@ -1,9 +1,18 @@
-body {
+html, body {
+  height: 100%;
+}
+
+body,
+img,
+.jumbotron {
   background-attachment: fixed;
-  background-image: url(https://st2.depositphotos.com/1005680/5361/v/600/depositphotos_53612825-stock-illustration-vector-background-with-blue-flowers.jpg);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body {
+  background-image: url(https://st2.depositphotos.com/1005680/5361/v/600/depositphotos_53612825-stock-illustration-vector-background-with-blue-flowers.jpg);
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -25,23 +34,27 @@ textarea {
   resize: none;
 }
 
-.jumbotron {
-  background-attachment: fixed;
-  background-image: url(https://image.shutterstock.com/image-vector/cherry-spring-flower-background-260nw-555467743.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom: 25px ridge lavender;
-  border-radius: 0;
-  color: brown;
+.jumbotron,
+#currdentDay,
+#currentTime,
+.time-block,
+.hour,
+.footer {
   text-align: center;
 }
 
+.jumbotron {
+  background-image: url(https://image.shutterstock.com/image-vector/cherry-spring-flower-background-260nw-555467743.jpg);
+  border-bottom: 25px ridge lavender;
+  border-radius: 0;
+  color: brown;
+}
+
 .headBG {
-  width: 50%;
-  display: inline-block;
   background-color: rgba(255, 182, 193, 0.5);
   border-radius: 3%;
+  display: inline-block;
+  width: 50%;
 }
 
 #currdentDay,
@@ -50,17 +63,13 @@ textarea {
   font-weight: bold;
 }
 
-.container.fluid {
+.container {
   float: right;
   margin-bottom: 100px;
   max-width: 60%;
 }
 
 img {
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   float: left;
   height: 100%;
   margin-right: 50px;
@@ -75,7 +84,6 @@ img {
 
 .time-block {
   border-radius: 15px;
-  text-align: center;
 }
 
 .row {
@@ -91,7 +99,6 @@ img {
   color: darkslategrey;
   opacity: 0.95;
   padding: 10px;
-  text-align: center;
 }
 
 .past {
@@ -129,7 +136,6 @@ img {
   flex-shrink: 0;
   margin-top: 15px;
   padding-top: 15px;
-  text-align: center;
   width: 100%;
 }
 
@@ -137,14 +143,10 @@ img {
   img {
     display: none;
   }
- }
+}
  
  @media screen and (max-width: 608px) {
    .hour {
      font-size: small;
    }
- 
-   h1 {
-     font-size: 40px !important;
-   }
-  }
+}
