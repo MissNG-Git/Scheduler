@@ -17,29 +17,36 @@ $(document).ready(function() {
     var time = $(this).parent().attr("id");
     var text = $(this).siblings(".description").val();
     
-  // Save textarea input to local storage
-  localStorage.setItem(time, text);
-})
+    // Save textarea input to local storage
+    localStorage.setItem(time, text);
+  });
 
-  // Function to register hour & change background colors accordingly
-  function timeTracker() {
-    // Get current # of hours
-    var nowHour = moment().hour();
-    // Loop over time blocks & check time
-    $("#time-block").each(function() {
-      var blockHour = 
-      // **use classes: future, past & present (?)**
-      // If var1 less than var2 ...
-      
-      // Else if var1 === var2 ...
-      
-      // Else ...
-      
-    };
-  }
-
-  // Call function
-  timeTracker ();
+  // Get current hour
+  var nowHour = moment().hours();
+  console.log(nowHour);
+  // Apply corresponding color to each time block based on current hour
+  $(".time-block textarea").each(function() {
+    var blockHour = $(this).data("hour");
+    console.log(blockHour);
+    // If var1 less than var2 ...
+    if (blockHour < nowHour) {
+      $(this).removeClass("future");
+      $(this).removeClass("present");
+      $(this).addClass("past");
+    }
+    // Else if var1 === var2 ...
+    else if (blockHour === nowHour) {
+      $(this).removeClass("past");
+      $(this).removeClass("future");
+      $(this).addClass("present");
+    }
+    // Else ...
+    else {
+      $(this).removeClass("present");
+      $(this).removeClass("past");
+      $(this).addClass("future");
+    }
+  });
 
   // Display key: values from local storage
 
