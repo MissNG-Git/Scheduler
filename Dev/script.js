@@ -48,7 +48,7 @@ $(document).ready(function() {
   });
 
   // Display key: values from local storage onto schedule
-  var timeArray = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM"]
+  var timeArray = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM"];
   for (var i =0; i < timeArray.length; i++) {
     $("#"+timeArray[i] + " .description").val(localStorage.getItem(timeArray[i]));
   }
