@@ -1,105 +1,48 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-## Your Task
+**[MissNG Scheduler](https://missng-git.github.io/Scheduler/)**
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Using this simple calendar application will allow a user to save events for each hour of the day. This app will run in the browser and features dynamically updated HTML and CSS powered by jQuery with minimal utilisation of [Moment.js](https://momentjs.com/).
 
-You'll need to use a library like [Moment.js](https://momentjs.com/) to work with dates and times. `Moment.js` has historically been the most popular date/time library but is no longer supported by its developers. However, you can still use it for this project, or you can look into one of the following alternatives:
-
-  * [Luxon](https://moment.github.io/luxon/)
-
-  * [Day.js](https://day.js.org/)
-
-  * [date-fns](https://date-fns.org/)
-
-  * [js-Joda](https://js-joda.github.io/js-joda/)
-
-Whichever library you choose, be sure to read the documentation carefully!
-
-
-## User Story
+## Objectives
 
 ```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
++ Help users organise their busy schedule
++ Add important events to a daily planner
++ Assist in effective time management
 ```
-
-
-## Acceptance Criteria
-
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
-
 
 ## Mock-Up
 
 The following animation demonstrates the application functionality:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+![day planner demo](/Assets/05-third-party-apis-homework-demo.gif)
 
+### Overview of Code Functionality
 
-## Grading Requirements
+1. Application displays header inclusive of current date and time, loaded from `Moment.js`, which is dynamically updated every second.
 
-This homework is graded based on the following criteria: 
+2. Application loads planner and presents time blocks for standard business hours to user.
 
-### Technical Acceptance Criteria: 40%
+3. Application's time blocks are stylishly color-coded to indicate whether an event is in the past, present or future.
 
-* Satisfies all of the above acceptance criteria plus the following:
+4. Application allows user to enter text within selected time block to register an event.
 
-  * Uses the Moment.js library to work with date and time
+5. Application's 'add to calendar' (save) button successfully saves data entered into local storage.
 
-### Deployment: 32%
+6. Application retrieves stored information and correctly displays back into relevant text area.
 
-* Application deployed at live URL
+7. Application successfully keeps data displayed in relevant time block even after page refresh.
 
-* Application loads with no errors
+8. Application maintains responsives and adjusts images, buttons and content to relevant screen sizes.
 
-* Application GitHub URL submitted
+### Usability 
 
-* GitHub repo contains application code
+* **NOTE:** Current date & time displayed at top of page.
 
-### Application Quality: 15%
+* Scroll to desired time block and enter data into blank text area (_these are the semi-transparent color-coded boxes_).
 
-* Application user experience is intuitive and easy to navigate
+* Click on the blue button with calendar icon on the right to save your entry to local storage. 
+*Note:* _the calendar icon will turn dark grey when you hover over it._
 
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+* Rest assured that your information will remain on the page even if you refresh the page! 👍
