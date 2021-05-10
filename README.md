@@ -16,7 +16,7 @@ Using this simple calendar application will allow a user to save events for each
 
 The following animation demonstrates the application functionality:
 
-![day planner demo](/Assets/05-third-party-apis-homework-demo.gif)
+![day planner demo](./Assets/screenshot.PNG)
 
 ### Overview of Code Functionality
 
@@ -36,13 +36,13 @@ The following animation demonstrates the application functionality:
 
 8. Application maintains responsives and adjusts images, buttons and content to relevant screen sizes.
 
-### Usability 
+### Usability
 
-* **NOTE:** Current date & time displayed at top of page.
+- **NOTE:** Current date & time displayed at top of page.
 
-* Scroll to desired time block and enter data into blank text area (_these are the semi-transparent color-coded boxes_).
+- Scroll to desired time block and enter data into blank text area (_these are the semi-transparent color-coded boxes_).
 
-* Click on the blue button with calendar icon on the right to save your entry to local storage. 
-*Note:* _the calendar icon will turn dark grey when you hover over it._
+- Click on the blue button with calendar icon on the right to save your entry to local storage.
+  _Note:_ _the calendar icon will turn dark grey when you hover over it._
 
-* Rest assured that your information will remain on the page even if you refresh the page! 👍
+- Rest assured that your information will remain on the page even if you refresh the page! 👍
